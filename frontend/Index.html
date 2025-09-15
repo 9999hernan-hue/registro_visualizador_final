@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro Visualizador</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="titulo">Registro Visualizador</h1>
+
+    <select id="idioma" onchange="cambiarIdioma()">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+    </select>
+
+    <div id="registro">
+      <p><strong id="tituloNombre">Nombre:</strong> <span id="nombre"></span></p>
+      <p><strong id="tituloDescripcion">Descripción:</strong> <span id="descripcion"></span></p>
+      <p><strong id="tituloFecha">Fecha:</strong> <span id="fecha"></span></p>
+    </div>
+
+    <button onclick="copiarRegistro()">Copiar Registro</button>
+    <button onclick="simularPago()">Simular Pago</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
